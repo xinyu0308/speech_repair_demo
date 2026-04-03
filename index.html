@@ -94,7 +94,7 @@
     The table below compares <b>Input</b>, <b>Input+<i>FAST</i></b>, <b>ASR+TTS</b>, Ablation studies, <b>Our Proposed Full Model</b>, and Baselines.
   </p>
 
-  <h2> High intelligibility </h2>
+  <h2> Mandarin Dataset: High intelligibility </h2>
   <table>
   <thead>
     <tr>
@@ -165,7 +165,7 @@
   </tbody>
   </table>
 
-  <h2> Moderate intelligibility </h2>
+  <h2> Mandarin Dataset: Moderate intelligibility </h2>
   <table>
   <thead>
     <tr>
@@ -236,7 +236,7 @@
   </tbody>
   </table>
 
-  <h2> Low intelligibility </h2>
+  <h2> Mandarin Dataset: Low intelligibility </h2>
   <table>
   <thead>
     <tr>
@@ -307,7 +307,7 @@
   </tbody>
   </table>
 
-  <h2> Very low intelligibility </h2>
+  <h2> Mandarin Dataset: Very low intelligibility </h2>
   <table>
   <thead>
     <tr>
@@ -374,6 +374,94 @@
     <td><audio controls src="./demo/39_sample3_diffdsr.wav"></audio></td>
     <td><audio controls src="./demo/39_sample3_Rnv.wav"></audio></td>
     <td><audio controls src="./demo/39_sample3_knn.wav"></audio></td>
+  </tr>
+  </tbody>
+  </table>
+
+  <h2> English Dataset (TORGO) </h2>
+  <table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Input</th>
+      <th>Input+<i>FAST</i></th>
+      <th>ASR+TTS</th>
+      <th>Ours<br>(w/o SPK)</th>
+      <th>Ours<br>(w/o <i>FAST</i>)</th>
+      <th class="bold-header">Ours (Full)</th>
+      <th>Oracle TTS</th>
+      <th>DiffDSR<sup>[1]</sup></th>
+      <th>RnV<sup>[2]</sup></th>
+      <th>Liu et al.<sup>[3]</sup></th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      It also provides for funds <br>
+      <span style="color:gray; font-size:0.8em;">11187_M05_2_headMic_0186</span>
+    </td>
+    <td><audio controls src="./demo/raw_files_11187_M05_2_headMic_0186.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_processed_fcsw_output_test_11187_M05_2_headMic_0186.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_xtts_asr_output_11187_M05_2_headMic_0186.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_xtts_asr_fcsw_11187_M05_2_headMic_0186.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_xtts_asr_spk_11187_M05_2_headMic_0186.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_xtts_asr_fcsw_spk_11187_M05_2_headMic_0186.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_xtts_gt_11187_M05_2_headMic_0186.wav"></audio></td>
+    <td><audio controls src="./demo/DiffDSR_11187_M05_2_headMic_0186.wav"></audio></td>
+    <td><audio controls src="./demo/TORGO_output_full_repair_11187_M05_2_headMic_0186.wav"></audio></td>
+    <td><audio controls src="./demo/test_torgo_knn_11187_M05_2_headMic_0186.wav"></audio></td>
+  </tr>
+
+  <tr>
+    <td>
+      Don't ask me to carry an oily rag like that <br>
+      <span style="color:gray; font-size:0.8em;">11545_M05_1_headMic_0078</span>
+    </td>
+    <td><audio controls src="./demo/raw_files_11545_M05_1_headMic_0078.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_processed_fcsw_output_test_11545_M05_1_headMic_0078.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_xtts_asr_output_11545_M05_1_headMic_0078.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_xtts_asr_fcsw_11545_M05_1_headMic_0078.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_xtts_asr_spk_11545_M05_1_headMic_0078.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_xtts_asr_fcsw_spk_11545_M05_1_headMic_0078.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_xtts_gt_11545_M05_1_headMic_0078.wav"></audio></td>
+    <td><audio controls src="./demo/DiffDSR_11545_M05_1_headMic_0078.wav"></audio></td>
+    <td><audio controls src="./demo/TORGO_output_full_repair_11545_M05_1_headMic_0078.wav"></audio></td>
+    <td><audio controls src="./demo/test_torgo_knn_11545_M05_1_headMic_0078.wav"></audio></td>
+  </tr>
+
+  <tr>
+    <td>
+      The train approached the depot slowly <br>
+      <span style="color:gray; font-size:0.8em;">12392_M04_2_arrayMic_0231</span>
+    </td>
+    <td><audio controls src="./demo/raw_files_12392_M04_2_arrayMic_0231.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_processed_fcsw_output_test_12392_M04_2_arrayMic_0231.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_xtts_asr_output_12392_M04_2_arrayMic_0231.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_xtts_asr_fcsw_12392_M04_2_arrayMic_0231.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_xtts_asr_spk_12392_M04_2_arrayMic_0231.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_xtts_asr_fcsw_spk_12392_M04_2_arrayMic_0231.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_xtts_gt_12392_M04_2_arrayMic_0231.wav"></audio></td>
+    <td><audio controls src="./demo/DiffDSR_12392_M04_2_arrayMic_0231.wav"></audio></td>
+    <td><audio controls src="./demo/TORGO_output_full_repair_12392_M04_2_arrayMic_0231.wav"></audio></td>
+    <td><audio controls src="./demo/test_torgo_knn_12392_M04_2_arrayMic_0231.wav"></audio></td>
+  </tr>
+
+  <tr>
+    <td>
+      Nothing is as offensive as innocence <br>
+      <span style="color:gray; font-size:0.8em;">12640_M04_2_headMic_0248</span>
+    </td>
+    <td><audio controls src="./demo/raw_files_12640_M04_2_headMic_0248.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_processed_fcsw_output_test_12640_M04_2_headMic_0248.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_xtts_asr_output_12640_M04_2_headMic_0248.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_xtts_asr_fcsw_12640_M04_2_headMic_0248.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_xtts_asr_spk_12640_M04_2_headMic_0248.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_xtts_asr_fcsw_spk_12640_M04_2_headMic_0248.wav"></audio></td>
+    <td><audio controls src="./demo/torgo_xtts_gt_12640_M04_2_headMic_0248.wav"></audio></td>
+    <td><audio controls src="./demo/DiffDSR_12640_M04_2_headMic_0248.wav"></audio></td>
+    <td><audio controls src="./demo/TORGO_output_full_repair_12640_M04_2_headMic_0248.wav"></audio></td>
+    <td><audio controls src="./demo/test_torgo_knn_12640_M04_2_headMic_0248.wav"></audio></td>
   </tr>
   </tbody>
   </table>
