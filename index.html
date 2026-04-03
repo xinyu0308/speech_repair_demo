@@ -5,7 +5,7 @@
   <title>Speech Repair Demo</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-    h1, h2 { color: #2c3e50; }
+    h1, h2, h3 { color: #2c3e50; }
     .framework {
       text-align: center;
       margin-bottom: 40px;
@@ -94,7 +94,9 @@
     The table below compares <b>Input</b>, <b>Input+<i>FAST</i></b>, <b>ASR+TTS</b>, Ablation studies, <b>Our Proposed Full Model</b>, and Baselines.
   </p>
 
-  <h2> Mandarin Dataset(Chinese Dysarthria Speech Database): High intelligibility </h2>
+  <h2> Chinese Dysarthria Speech Database </h2>
+  
+  <h3> High intelligibility </h3>
   <table>
   <thead>
     <tr>
@@ -165,7 +167,7 @@
   </tbody>
   </table>
 
-  <h2> Mandarin Dataset: Moderate intelligibility </h2>
+  <h3> Moderate intelligibility </h3>
   <table>
   <thead>
     <tr>
@@ -236,7 +238,7 @@
   </tbody>
   </table>
 
-  <h2> Mandarin Dataset: Low intelligibility </h2>
+  <h3> Low intelligibility </h3>
   <table>
   <thead>
     <tr>
@@ -307,7 +309,7 @@
   </tbody>
   </table>
 
-  <h2> Mandarin Dataset: Very low intelligibility </h2>
+  <h3> Very low intelligibility </h3>
   <table>
   <thead>
     <tr>
@@ -379,6 +381,8 @@
   </table>
 
   <h2> English Dataset (TORGO) </h2>
+  
+  <h3> Speaker: M05 </h3>
   <table>
   <thead>
     <tr>
@@ -429,7 +433,27 @@
     <td><audio controls src="./demo/TORGO_output_full_repair_11545_M05_1_headMic_0078.wav"></audio></td>
     <td><audio controls src="./demo/test_torgo_knn_11545_M05_1_headMic_0078.wav"></audio></td>
   </tr>
+  </tbody>
+  </table>
 
+  <h3> Speaker: M04 </h3>
+  <table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Input</th>
+      <th>Input+<i>FAST</i></th>
+      <th>ASR+TTS</th>
+      <th>Ours<br>(w/o SPK)</th>
+      <th>Ours<br>(w/o <i>FAST</i>)</th>
+      <th class="bold-header">Ours (Full)</th>
+      <th>Oracle TTS</th>
+      <th>DiffDSR<sup>[1]</sup></th>
+      <th>RnV<sup>[2]</sup></th>
+      <th>Liu et al.<sup>[3]</sup></th>
+    </tr>
+  </thead>
+  <tbody>
   <tr>
     <td>
       The train approached the depot slowly <br>
